@@ -11,3 +11,66 @@
 7. Update the pipeline
 8. Update the main.py
 9. Update the app.py
+
+
+# How to run ?
+
+## Steps:
+
+Clone the repository
+
+```bash
+https://github.com/pritesh2000/MLOPS_project_1
+```
+
+### step 1: Create a virtual environment after opening the repository
+
+```bash
+virtualenv myenv
+```
+
+```bash
+source myenv/scripts/activate
+```
+
+### step 2: install the requirements
+```bash
+pip install -r requirements.txt
+```
+
+```bash
+# Finally run the following command
+python app.py
+```
+
+```bash
+open up your local host and port
+```
+
+
+
+## MLflow
+
+[Documentation](https://mlflow.org/docs/latest/index.html)
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/priteshptadvi29/MLOPS_project_1.mlflow \
+MLFLOW_TRACKING_USERNAME=priteshptadvi29 \
+MLFLOW_TRACKING_PASSWORD=6cc1605a0d2812cb32e7559552b5d095b5e3023d \
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/priteshptadvi29/MLOPS_project_1.mlflow
+
+export MLFLOW_TRACKING_USERNAME=priteshptadvi29
+
+export MLFLOW_TRACKING_PASSWORD=6cc1605a0d2812cb32e7559552b5d095b5e3023d
+```
