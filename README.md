@@ -74,3 +74,7 @@ export MLFLOW_TRACKING_USERNAME=priteshptadvi29
 
 export MLFLOW_TRACKING_PASSWORD=6cc1605a0d2812cb32e7559552b5d095b5e3023d
 ```
+
+
+ECR repo to save docker image
+saved URI : 905418078680.dkr.ecr.ap-south-1.amazonaws.com/mlproj
