@@ -61,7 +61,7 @@ open up your local host and port
 
 MLFLOW_TRACKING_URI=https://dagshub.com/priteshptadvi29/MLOPS_project_1.mlflow \
 MLFLOW_TRACKING_USERNAME=priteshptadvi29 \
-MLFLOW_TRACKING_PASSWORD=6cc1605a0d2812cb32e7559552b5d095b5e3023d \
+MLFLOW_TRACKING_PASSWORD=(your_token) \
 python script.py
 
 Run this to export as env variables:
@@ -72,7 +72,7 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/priteshptadvi29/MLOPS_project_1.m
 
 export MLFLOW_TRACKING_USERNAME=priteshptadvi29
 
-export MLFLOW_TRACKING_PASSWORD=6cc1605a0d2812cb32e7559552b5d095b5e3023d
+export MLFLOW_TRACKING_PASSWORD=(your_token)
 ```
 
 
