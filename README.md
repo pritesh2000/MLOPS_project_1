@@ -1,4 +1,4 @@
-# MLOPS_project_1
+# Wine_Quality_Prediction
 
 ## Workflows
 
@@ -20,13 +20,13 @@
 Clone the repository
 
 ```bash
-git clone https://github.com/pritesh2000/MLOPS_project_1
+git clone https://github.com/pritesh2000/Wine_Quality_Prediction
 ```
 
 ### step 1: Create a virtual environment after opening the repository
 
 ```bash
-cd MLOPS_project_1
+cd Wine_Quality_Prediction
 ```
 
 ```bash
