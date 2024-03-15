@@ -20,10 +20,14 @@
 Clone the repository
 
 ```bash
-https://github.com/pritesh2000/MLOPS_project_1
+git clone https://github.com/pritesh2000/MLOPS_project_1
 ```
 
 ### step 1: Create a virtual environment after opening the repository
+
+```bash
+cd MLOPS_project_1
+```
 
 ```bash
 virtualenv myenv
@@ -44,37 +48,6 @@ python app.py
 ```
 
 ```bash
-open up your local host and port
+open up your localhost and train model using by extending url with '/train' or run command python main.py
+Now app can run using trained data and predict the result
 ```
-
-
-
-## MLflow
-
-[Documentation](https://mlflow.org/docs/latest/index.html)
-
-##### cmd
-- mlflow ui
-
-### dagshub
-[dagshub](https://dagshub.com/)
-
-MLFLOW_TRACKING_URI=https://dagshub.com/priteshptadvi29/MLOPS_project_1.mlflow \
-MLFLOW_TRACKING_USERNAME=priteshptadvi29 \
-MLFLOW_TRACKING_PASSWORD=(your_token) \
-python script.py
-
-Run this to export as env variables:
-
-```bash
-
-export MLFLOW_TRACKING_URI=https://dagshub.com/priteshptadvi29/MLOPS_project_1.mlflow
-
-export MLFLOW_TRACKING_USERNAME=priteshptadvi29
-
-export MLFLOW_TRACKING_PASSWORD=(your_token)
-```
-
-
-ECR repo to save docker image
-saved URI : 905418078680.dkr.ecr.ap-south-1.amazonaws.com/mlproj
