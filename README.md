@@ -1,4 +1,4 @@
-# MLOPS_project_1
+# Wine_Quality_Prediction
 
 ## Workflows
 
