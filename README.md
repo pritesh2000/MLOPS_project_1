@@ -32,10 +32,16 @@ cd Wine_Quality_Prediction
 ```bash
 virtualenv myenv
 ```
-
+#### Based on CLI run
 ```bash
-source myenv/scripts/activate
+source myenv/scripts/activate  # in bash
 ```
+or
+```bash
+myenv\scripts\activate   # in command prompt
+```
+
+
 
 ### step 2: install the requirements
 ```bash
