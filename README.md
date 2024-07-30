@@ -13,9 +13,9 @@
 9. Update the app.py
 
 
-# How to run ?
+## How to run ?
 
-## Steps:
+### Steps:
 
 Clone the repository
 
@@ -23,31 +23,37 @@ Clone the repository
 git clone https://github.com/pritesh2000/Wine_Quality_Prediction
 ```
 
-### step 1: Create a virtual environment after opening the repository
+### Step 1: Create a virtual environment after opening the repository
 
 ```bash
 cd Wine_Quality_Prediction
 ```
 
 ```bash
-virtualenv myenv
+virtualenv env
 ```
 
+#### Based on CLI run
 ```bash
-source myenv/scripts/activate
+# for bash
+source env/scripts/activate
+```
+or
+```bash
+# for command prompt
+env\scripts\activate
 ```
 
-### step 2: install the requirements
+### Step 2: install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
 ```bash
-# Finally run the following command
 python app.py
 ```
 
-```bash
-open up your localhost and train model using by extending url with '/train' or run command python main.py
+```
+Open up your localhost:8080 (make sure the port has not been used before).
 Now app can run using trained data and predict the result
 ```
