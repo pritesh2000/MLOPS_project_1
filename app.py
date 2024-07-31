@@ -1,6 +1,7 @@
 from flask import render_template, Flask, request
 import os
 import numpy as np
+import pandas as pd
 from mlProject.pipeline.prediction import PredictionPipeline
 
 app = Flask(__name__)     #intializing a flask app
@@ -16,7 +17,6 @@ def run_initial_training():
 @app.route('/',methods = ['GET'])   # route to display the home page
 def homePage():
     return render_template("index.html")
-
 
 @app.route('/train', methods=['GET'])  # Route to train pipeline
 def training():
@@ -47,9 +47,16 @@ def index():
 
             data = [fixed_acidity,volatile_acidity,citric_acid,residual_sugar,chlorides,free_sulfur_dioxide,total_sulfur_dioxide,density,pH,sulphates,alcohol]
             data = np.array(data).reshape(1,11)
+            
+            # Example feature names (these should match the names used during model training)
+            feature_names = ['fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar', 'chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol']
+            
+            # Create a DataFrame with the same feature names
+            frame = pd.DataFrame(data, 
+                                columns=feature_names)
 
             obj = PredictionPipeline()
-            predict = obj.predict(data)
+            predict = obj.predict(frame)
 
             return render_template('results.html', prediction = str(predict))
         
@@ -61,7 +68,5 @@ def index():
         return render_template('index.html')
 
 if __name__ == "__main__":
-    run_initial_training()
-    # app.run(host="0.0.0.0", port=7000, debug=False)  
-    # app.run(host="0.0.0.0", port=8080, debug=True)  
+    run_initial_training() 
     app.run(host="0.0.0.0", port=8080, debug=False)
