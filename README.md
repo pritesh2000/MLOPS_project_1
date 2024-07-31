@@ -1,5 +1,10 @@
 # Wine_Quality_Prediction
 
+### Docker image of this project: 
+```
+docker pull priteshtadvi/wine-quality-image:latest
+```
+
 ## Workflows
 
 1. Update config.yaml
