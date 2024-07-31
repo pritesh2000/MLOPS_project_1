@@ -12,7 +12,6 @@
 8. Update the main.py
 9. Update the app.py
 
-
 ## How to run ?
 
 ### Steps:
@@ -43,8 +42,6 @@ or
 # for command prompt
 env\scripts\activate
 ```
-
-
 
 ### Step 2: install the requirements
 ```bash

@@ -1,7 +1,7 @@
 pandas
 # mlflow==2.2.2
 mlflow
-notebook
+# notebook
 numpy
 scikit-learn
 # python-box==6.0.2
