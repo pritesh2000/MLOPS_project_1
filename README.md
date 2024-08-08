@@ -4,6 +4,9 @@
 ```
 docker pull priteshtadvi/wine-quality-image:latest
 ```
+### Deployed on huggingface:
+[https://huggingface.co/spaces/pritesh29/Wine-Quality-Prediction](https://huggingface.co/spaces/pritesh29/Wine-Quality-Prediction)
+
 
 ## Workflows
 
